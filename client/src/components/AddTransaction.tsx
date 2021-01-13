@@ -11,8 +11,10 @@ export const AddTransaction = () => {
     addTransaction({
       amount,
       text,
-      id: Math.floor(Math.random() * 100000000),
+      _id: Math.floor(Math.random() * 1000000000000),
     });
+    setText("");
+    setAmount(0);
   };
 
   return (
